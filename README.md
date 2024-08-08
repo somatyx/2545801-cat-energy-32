@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Pavel Kuznetsov](https://up.htmlacademy.ru/adaptive/32/user/2545801).
-* Наставник: `Неизвестно`.
+* Наставник: [Валера Хаслер](https://htmlacademy.ru/profile/id224163).
 
 ---
 
