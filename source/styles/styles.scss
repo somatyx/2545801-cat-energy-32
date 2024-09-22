@@ -1,6 +1,38 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
 
 /* BLOCKS */
+// PAGES-COMMON
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/page.scss";
+@import "./blocks/button.scss";
+@import "./blocks/contacts.scss";
+
+// HEADER-COMMON
+@import "./blocks/main-header.scss";
+@import "./blocks/logo-icon.scss";
+@import "./blocks/logo-text.scss";
+@import "./blocks/main-nav.scss";
+
+// MAIN-COMMON
+@import "./blocks/main.scss";
+
+// FOOTER-COMMON
+@import "./blocks/main-footer.scss";
+
+// INDEX
+@import "./blocks/hero.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/example.scss";
+
+// CATALOG
+@import "./blocks/cards.scss";
+@import "./blocks/card.scss";
+@import "./blocks/sub-products.scss";
+@import "./blocks/sub-product.scss";
+@import "./blocks/sub-products-gift.scss";
+@import "./blocks/subscribe.scss";
