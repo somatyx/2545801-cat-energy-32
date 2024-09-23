@@ -16,6 +16,49 @@
 
 // }
 
+.advantages__item::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-size: 25px 30px;
+  background-repeat: no-repeat;
+  background-color: $contrast-background-color;
+  position: absolute;
+}
+
+// .advantages__item--leaf {
+
+// }
+
+.advantages__item--leaf::after {
+  background-image: url("../../icons/stack.svg#icon-leaf");
+}
+
+// .advantages__item--water {
+
+// }
+
+.advantages__item--water::after {
+  background-image: url("../../icons/stack.svg#icon-water");
+}
+
+// .advantages__item--eat {
+
+// }
+
+.advantages__item--eat::after {
+  background-image: url("../../icons/stack.svg#icon-eat");
+}
+
+// .advantages__item--clock {
+
+// }
+
+.advantages__item--clock::after {
+  background-image: url("../../icons/stack.svg#icon-clock");
+}
+
 .advantages__description {
   color: $secondary-text-color;
 }
