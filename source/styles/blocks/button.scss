@@ -1,9 +1,77 @@
 .button {
+  display: block;
+  align-content: center;
+  text-transform: uppercase;
+  border: none;
   font-family: $secondary-font;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button--primary {
+  padding: 10px 26px;
   font-size: 16px;
   line-height: 20px;
   color: $contrast-text-color;
-  text-transform: uppercase;
-  background-color: $contrast-background-color;
-  border-style: none;
+  background-color: $basic-color;
+}
+
+.button--primary:hover {
+  background-color: #5eaa2f;
+}
+
+.button--primary:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--secondary {
+  padding: 10px 26px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $second-text-color;
+  background-color: transparent;
+}
+
+.button--secondary:hover {
+  background-color: #ebebeb;
+}
+
+.button--secondary:active {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.button--link {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 16px;
+  line-height: 16px;
+  color: $main-text-color;
+  background-color: transparent;
+}
+
+.button--link:active {
+  color: #999999;
+}
+
+.button--link::after {
+  content: "";
+  width: 33px;
+  height: 10px;
+  margin-left: 15px;
+  align-self: center;
+  background-image: url("../../icons/icon-arrow.svg");
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
+}
+
+.button--link:hover::after {
+  opacity: 1;
+  background-image: url("../../icons/icon-arrow-long.svg");
+}
+
+.button--link:active::after {
+  opacity: 0.5;
 }

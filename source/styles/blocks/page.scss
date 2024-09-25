@@ -1,7 +1,9 @@
-// .page {
-
-// }
-
-// .page__body {
-
-// }
+.page__body {
+  margin: 0 auto;
+  min-width: 320px;
+  font-family: $main-font;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  color: $main-text-color;
+  background-color: $main-background-color;
+}

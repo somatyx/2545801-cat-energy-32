@@ -1,0 +1,91 @@
+.card-more {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    border: 2px solid $second-background-color;
+    margin-top: 83px;
+    padding: 50px 37px 40px;
+
+    @media (min-width: $desktop-width) {
+      padding: 50px 37px 40px;
+    }
+  }
+}
+
+.card-more::before {
+  content: "";
+  grid-column: 1 / -1;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  background-image: url("../../icons/card-more.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.card-more__link {
+  grid-column: 1 / -1;
+  margin-top: 23px;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+  }
+}
+
+.card-more__title {
+  margin: 0;
+  padding-bottom: 8px;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    padding-bottom: 23px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.card-more__title:hover {
+  color: #898585;
+}
+
+.card-more__title:active {
+  color: #b4b1b1;
+}
+
+.card-more__text {
+  margin: 0;
+  padding-bottom: 21px;
+  font-family: $main-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: $second-text-color;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    padding-bottom: 80px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.card-more__button {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-top: auto;
+  color: $second-text-color;
+  background-color: $second-background-color;
+}

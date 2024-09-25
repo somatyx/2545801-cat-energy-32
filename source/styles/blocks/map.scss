@@ -1,0 +1,51 @@
+.map {
+  display: flex;
+  flex-direction: column;
+}
+
+.map--catalog {
+  background-color: $second-background-color;
+}
+
+.map__container {
+  position: relative;
+}
+
+.map__container--image {
+  display: flex;
+  width: 100%;
+  height: 362px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.map__container--text {
+  order: -1;
+}
+
+.map__image {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.map__iframe {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border: none;
+  pointer-events: none;
+}
+
+.map__container:hover .map__iframe {
+  pointer-events: all;
+}

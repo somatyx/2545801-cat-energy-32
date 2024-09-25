@@ -1,35 +1,129 @@
-// .programs {
+.programs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
-// }
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
 
-// .programs__title {
-
-// }
-
-.programs__list {
-  list-style: none;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 0 110px;
+  }
 }
 
-// .programs__item {
+.programs__container {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  margin: 0 20px;
+  padding: 21px 20px 18px;
+  background-color: $second-background-color;
 
-// }
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 30px;
+    padding: 80px 0 57px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 162px 1fr;
+    padding: 47px 55px 60px 52px;
+    margin: 0;
+  }
+}
 
 .programs__subtitle {
+  align-content: center;
   font-family: $secondary-font;
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
 }
 
-// .programs__image {
+.programs__image {
+  display: block;
+  grid-row: 1 / 2;
 
-// }
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    justify-self: center;
+  }
 
-.programs__description {
-  color: $secondary-text-color;
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-self: start;
+  }
+}
+
+.programs__image--slim {
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+    margin-top: -4px;
+  }
+}
+
+.programs__image--pro {
+  margin-top: 4px;
+  margin-left: -8px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+    margin: 0 -34px;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+    margin-left: -17px;
+  }
+}
+
+.programs__lead {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-family: $main-font;
+  color: $second-text-color;
+  padding: 22px 0;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 24px 0 52px;
+    border-bottom: none;
+    grid-column: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    padding: 39px 0 27px;
+  }
 }
 
 .programs__button {
-  line-height: 16px;
-  text-decoration: none;
+  grid-column: 1 / -1;
+  width: fit-content;
+  margin-top: 15px;
+  padding: 4px 15px 4px 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    margin-top: auto;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
 }

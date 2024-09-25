@@ -1,67 +1,185 @@
-// .example {
+.example {
+  background-color: $second-background-color;
 
-// }
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    background: linear-gradient(to top, $second-background-color 43%, transparent 43%);
+    background-color: $main-background-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to top, $second-background-color 69%, transparent 69%);
+  }
+}
+
+.example__wrapper {
+  padding: 0 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 224px;
+    padding: 0 110px 76px;
+  }
+}
 
 .example__title {
-  font-family: $secondary-font;
-  font-size: 36px;
+  padding-top: 25px;
   line-height: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 77px;
+    padding-bottom: 76px;
+  }
 }
 
-.example__description {
-  color: $secondary-text-color;
+.example__text {
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  color: $second-text-color;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 55px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+    padding-bottom: 69px;
+  }
 }
 
-// .example__content {
+.example__stats {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 100px;
+  }
 
-// }
-
-.example__info {
-  font-family: $main-font;
-  font-size: 12px;
-  line-height: 12px;
-  color: $secondary-text-color;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
-.example__data {
-  font-family: $secondary-font;
-  font-size: 24px;
-  line-height: 24px;
-  color: $main-text-color;
-  text-transform: uppercase;
+.example__image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 102px;
+    padding-bottom: 102px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: auto;
+    padding-top: 0;
+    padding-bottom: 11px;
+    background: none;
+  }
 }
 
-.example__price {
-  font-family: $secondary-font;
-  font-size: $main-font-size;
-  line-height: 20px;
-  color: $main-text-color;
-  text-transform: uppercase;
+.example__slider {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
-// .example__slider {
+.example__image--before {
+  grid-area: 1 / 1 / 2 / 2;
+  width: 100%;
+  height: 100%;
+  clip-path: inset(0 50% 0 0);
+}
 
-// }
+.example__image--after {
+  grid-area: 1 / 1 / 2 / 2;
+  width: 100%;
+  height: 100%;
+  clip-path: inset(0 0 0 50%);
+}
 
-// .example__image {
-
-// }
-
-// .example__divider {
-
-// }
+.example__divider {
+  display: grid;
+  z-index: 1;
+  grid-area: 1 / 1 / 2 / 2;
+  place-self: center center;
+  width: 4px;
+  height: 100%;
+  margin: 0 -2px;
+  border-radius: 2px;
+  background-color: #666666;
+  cursor: col-resize;
+}
 
 .example__button {
-  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   height: 40px;
+  width: 40px;
+  place-self: center center;
   background-color: $main-background-color;
-  border: none;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .example__button::before {
   content: "";
   display: block;
-  width: 40px;
-  height: 40px;
-  background-image: url("../../icons/stack.svg#example-slider-arrows");
+  width: 100%;
+  height: 100%;
+  mask-image: url("../../icons/slider-arrow.svg");
+  mask-size: 24px 18px;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background-color: #666666;
+}
+
+.example__curtain:hover {
+  background-color: $basic-color;
+
+  & .example__button {
+    border-color: $basic-color;
+  }
+
+  & .example__button::before {
+    background-color: $basic-color;
+  }
+}
+
+.example__curtain:active {
+  opacity: 0.6;
+  background-color: #5eaa2f;
+
+  & .example__button {
+    border-color: #5eaa2f;
+  }
+
+  & .example__button::before {
+    background-color: #5eaa2f;
+  }
 }

@@ -1,0 +1,35 @@
+.social {
+  margin: 0;
+  list-style: none;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 43px;
+  color: inherit;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 37px;
+    height: 37px;
+  }
+}
+
+.social__icon {
+  color: #666666;
+}
+
+.social__link:hover .social__icon {
+  color: $basic-color;
+}
+
+.social__link:focus .social__icon {
+  color: $basic-color;
+}
+
+.social__link:active .social__icon {
+  color: rgba(104, 183, 56, 0.6);
+}
