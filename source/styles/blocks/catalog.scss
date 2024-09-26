@@ -1,6 +1,6 @@
 .catalog {
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
+    padding-top: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,6 +17,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 110px;
+    margin-top: -10px;
   }
 }
 
@@ -27,24 +28,26 @@
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 80px;
     font-size: 60px;
     line-height: 60px;
+    font-weight: 400;
   }
 }
 
 .catalog__wrapper {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     gap: 55px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 61px 80px;
   }
 }

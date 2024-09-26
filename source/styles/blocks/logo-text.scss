@@ -1,8 +1,16 @@
 .logo-text {
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding-left: 56px;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -5px;
+  }
 }
 
 .logo-text:hover {

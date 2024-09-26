@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   font-size: 16px;
+  font-weight: 400;
 }
 
 .copyright__link {
@@ -23,6 +24,7 @@
   font-family: $main-font;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   color: $second-text-color;
 
   @media (min-width: $tablet-width) {

@@ -40,18 +40,21 @@
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     align-self: start;
     padding-bottom: 80px;
     font-size: 32px;
     line-height: 32px;
+    font-weight: 400;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 80px;
     font-size: 40px;
     line-height: 40px;
+    font-weight: 400;
   }
 }
 
@@ -98,6 +101,7 @@
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
   color: #222222;
   text-transform: uppercase;
 
@@ -114,6 +118,7 @@
     padding-bottom: 0;
     font-size: 20px;
     line-height: 20px;
+    font-weight: 400;
   }
 }
 
@@ -124,6 +129,7 @@
   font-family: $main-font;
   font-size: 14px;
   line-height: 14px;
+  font-weight: 400;
   color: $second-text-color;
   padding-bottom: 15px;
 
@@ -136,6 +142,7 @@
     padding: 0;
     font-size: 16px;
     line-height: 20px;
+    font-weight: 400;
   }
 
   @media (min-width: $desktop-width) {
@@ -143,6 +150,7 @@
     padding-bottom: 0;
     font-size: 16px;
     line-height: 20px;
+    font-weight: 400;
   }
 }
 

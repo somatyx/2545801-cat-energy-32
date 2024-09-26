@@ -25,9 +25,10 @@
 }
 
 .main-nav__toggle {
-  align-self: center;
-  width: 28px;
+  // align-self: center;
+  width: 22px;
   height: 24px;
+  padding-top: 62px;
   border: none;
   cursor: pointer;
   list-style: none;
@@ -60,5 +61,9 @@
 
   .main-nav--nojs .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav--nojs .site-list--opened {
+    position: static;
   }
 }

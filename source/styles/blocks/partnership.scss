@@ -22,9 +22,10 @@
 .partnership__title {
   flex-basis: 165px;
   margin: 0;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
-  font-family: $secondary-font;
+  font-weight: 400;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -38,6 +39,7 @@
   margin: 0;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -45,10 +47,12 @@
     justify-content: space-between;
     font-size: 16px;
     line-height: 20px;
+    font-weight: 400;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    margin-right: -10px;
   }
 }
